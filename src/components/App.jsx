@@ -12,9 +12,9 @@ export const App = () => {
     <><ProfileBox>
       <Profile user={user} />
       <Stats user={user} />
-    <StatsSection data={data}/>
-    </ProfileBox>
     
+    </ProfileBox>
+    <StatsSection data={data}/>
     </>
 
   );

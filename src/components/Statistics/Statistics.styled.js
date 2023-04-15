@@ -1,5 +1,12 @@
 import styled from 'styled-components';
 
+export const StatisticsWraper = styled.section`
+width: 300px;
+  background-color: #7884984a;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: 20px;
+`;
 export const StatsTitle = styled.h2`
 font-size: 24px;
   font-weight: bold;
