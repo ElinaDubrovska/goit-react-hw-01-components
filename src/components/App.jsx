@@ -1,16 +1,13 @@
+import { Profile } from "./Profile/Profile";
+import user from "../user.json"
+import { Stats } from "./Profile/Stats";
+import { ProfileBox } from "./Profile/Profile.styled";
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
-  );
+    <ProfileBox>
+      <Profile user={user}/>
+      <Stats user={user}/>
+    </ProfileBox>
+  )
 };
