@@ -29,7 +29,7 @@ export const FriendAvatar = styled.img`
 width: 48px;
 height: 48px;
 `;
-export const FriendItem = styled.li`
+export const FriendItem = styled.div`
 display:flex;
 padding: 20px 20px;
 border: solid 2px gray;
