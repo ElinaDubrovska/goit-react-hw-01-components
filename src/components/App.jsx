@@ -1,10 +1,15 @@
+import user from "../user.json";
 import { Profile } from "./Profile/Profile";
-import user from "../user.json"
+
 import { Stats } from "./Profile/Stats";
 import { ProfileBox } from "./Profile/Profile.styled";
 
-import data from "../data.json"
+import data from "../data.json";
 import { StatsSection } from "./Statistics/Statistics";
+
+import friends from "../friends.json";
+import {  FriendMarkup } from "./FriendList/FriendList";
+
 
 export const App = () => {
   return (
@@ -12,9 +17,9 @@ export const App = () => {
     <><ProfileBox>
       <Profile user={user} />
       <Stats user={user} />
-    
-    </ProfileBox>
-    <StatsSection data={data}/>
+
+    </ProfileBox><StatsSection data={data} />
+    <FriendMarkup friends={friends} />
     </>
 
   );
