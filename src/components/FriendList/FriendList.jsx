@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { FriendCard } from "./FriendCard";
 import { FriendList } from "./FriendList.styled";
 
@@ -12,3 +13,10 @@ export const FriendMarkup =({friends}) => {
 </FriendList>
     );
 }
+FriendList.propTypes = {
+    friends: PropTypes.arrayOf(
+      PropTypes.shape({
+        id: PropTypes.number.isRequired,
+      })
+    ),
+  };

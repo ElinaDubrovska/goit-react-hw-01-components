@@ -10,6 +10,9 @@ import { StatsSection } from "./Statistics/Statistics";
 import friends from "../friends.json";
 import {  FriendMarkup } from "./FriendList/FriendList";
 
+import transactions from "../transactions.json";
+import { TransactionHistory } from "./TransactionHistory/TransactionHistory";
+
 
 export const App = () => {
   return (
@@ -17,9 +20,10 @@ export const App = () => {
     <><ProfileBox>
       <Profile user={user} />
       <Stats user={user} />
-
-    </ProfileBox><StatsSection data={data} />
+    </ProfileBox>
+    <StatsSection data={data} />
     <FriendMarkup friends={friends} />
+     <TransactionHistory items={transactions} />;
     </>
 
   );
