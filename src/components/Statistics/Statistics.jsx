@@ -2,10 +2,10 @@ import PropTypes from 'prop-types';
 import { StatisticsElement, StatisticsList, StatsTitle, StatisticsWraper } from "./Statistics.styled"
 import { StatsCard } from "./StatsCard"
 
-export const StatsSection = ({data}) =>{
+export const StatsSection = ({title, data}) =>{
     return(
         <StatisticsWraper>
-        <StatsTitle>Upload stats</StatsTitle>
+          {title && <StatsTitle>{title}</StatsTitle>}
       <StatisticsList>
             {data.map(item=>(
             <StatisticsElement key={item.id}>

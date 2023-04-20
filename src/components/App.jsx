@@ -21,7 +21,7 @@ export const App = () => {
       <Profile user={user} />
       <Stats user={user} />
     </ProfileBox>
-    <StatsSection data={data} />
+    <StatsSection title="Upload stats" data={data} />
     <FriendMarkup friends={friends} />
      <TransactionHistory items={transactions} />;
     </>
